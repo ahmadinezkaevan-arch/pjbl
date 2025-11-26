@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eksplora</title>
     <link rel="stylesheet" href="landingpage.css" />
 </head>
+
 <body>
     <!--navbar-->
     <header>
-    <div class="logo">
-        <img src="assets/logo.png" />
-        <span>Eksplora</span>
-    </div>
-    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" />
+            <span>Eksplora</span>
+        </div>
+
+    <button class="hamburger" id="hamburger">
+        ☰
+    </button>
+
+    <nav id="nav">
         <ul>
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="daftarBudaya.html">Daftar Budaya</a></li>
-        <li><a href="populer.html">Populer</a></li>
-        <li><a href="ulasan.html">Ulasan</a></li>
-        <li><a href="daftar.html" class="btn-daftar">Daftar</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="daftarBudaya.html">Daftar Budaya</a></li>
+            <li><a href="populer.html">Populer</a></li>
+            <li><a href="ulasan.html">Ulasan</a></li>
+            <li><a href="daftar.html" class="btn-daftar">Daftar</a></li>
         </ul>
     </nav>
-    </header>
+</header>
 
     <section class="hero">
     <h2>Eksplor Budaya</h2>
@@ -258,5 +265,16 @@
         </div>
     </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        btn.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+    </script>
+
+
 </body>
 </html>

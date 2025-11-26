@@ -64,6 +64,26 @@ nav ul li a:hover {
   color: #501006;
 }
 
+/* default hidden desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #501006;
+  cursor: pointer;
+}
+
+/* hidden nav mobile */
+nav {
+  transition: 0.3s ease;
+}
+
+nav.hide {
+  display: none;
+}
+
+
 .btn-daftar {
   background-color: #501006;
   color: #fff;
@@ -400,4 +420,124 @@ nav ul li a:hover {
     font-size: 13px;
     line-height: 1.5;
     max-width: 900px;
+}
+
+/* PHONE */
+@media (max-width: 768px) {
+
+  nav {
+    display: none;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav.hide {
+    display: none;
+  }
+
+  /* hero */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .search-box {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  /* cards */
+  .cards {
+    padding: 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .section-title {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  /* ulasan section */
+  .ulasan {
+    padding: 40px 20px;
+  }
+
+  .ulasan-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* unggahan */
+  .unggahan h3 {
+    padding: 40px 20px 10px;
+    margin: 0;
+  }
+
+  .unggahan-container {
+    flex-direction: column;
+    padding: 0 20px 40px;
+  }
+
+  .unggahan-item {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* center children horizontally on mobile */
+  }
+
+  .footer-sections-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block; /* ensure margin: 0 auto centers the image */
+  }
+
+  /* make sure the logo container itself is centered when stacking */
+  .footer-logo {
+    margin: 0 auto;
+  }
 }
