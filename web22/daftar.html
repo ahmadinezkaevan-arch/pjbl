@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <!-- Link ke Font Awesome untuk ikon sosial media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link ke file CSS yang sudah dibuat -->
+    <link rel="stylesheet" href="daftar.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <!-- Kolom Kiri: Visual Motif Batik -->
+        <div class="auth-left">
+            <div class="left-content">
+                <h1>Daftarkan Akunmu dan Bergabung Bersama Kami</h1>
+                <p>Nikmati akses penuh ke semua fitur premium, simpan preferensimu, dan jadilah bagian dari komunitas kami.</p>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan: Form Daftar -->
+        <div class="auth-right">
+            <div class="form-card">
+                <h2>Daftar</h2>
+
+                <form action="#" method="POST">
+                    <!-- Nama Akun -->
+                    <div class="form-group">
+                        <label for="username">Nama Akun</label>
+                        <input type="text" id="username" name="username" placeholder="Masukkan nama akun Anda" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                    </div>
+
+                    <!-- No. HP -->
+                    <div class="form-group">
+                        <label for="phone">No. HP</label>
+                        <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+                    </div>
+
+                    <!-- Tombol Daftar -->
+                    <button type="submit" class="btn-primary">Daftar</button>
+                </form>
+
+                <!-- Separator -->
+                <div class="separator">atau daftar dengan</div>
+                
+                <!-- Ikon Sosial Media -->
+                <div class="social-icons">
+                    <a href="#" class="social-icon" title="Masuk dengan Google"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-icon" title="Masuk dengan Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" title="Masuk dengan Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <!-- Link Pindah ke Halaman Masuk -->
+                <div class="switch-link">
+                    Sudah punya akun? <a href="masuk.html">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
